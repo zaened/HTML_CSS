@@ -1,0 +1,76 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>Umfrage</title>
+		<link href="kaffee-style.css" rel="stylesheet" type="text/css">
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Kaisei+Tokumin&display=swap" rel="stylesheet">
+	</head>
+	<body>
+		<header>
+			<h1>Alles über Kaffee</h1>
+			<nav>
+				<ul>
+					<li><a href="hauptseite.html">Hauptseite</a></li>
+					<li><a href="roesten.html">Rösten</a></li>
+					<li><a href="mahlen.html">Mahlen</a></li>
+					<li><a href="bruehen.html">Brühen</a></li>
+					<li><a href="kaffeevarianten.html">Kaffeevarianten</a></li>
+					<li><a href="umfrage.html">Umfrage</a></li>
+				</ul>
+			</nav>
+		</header>
+		<h1>Umfrage</h1>
+		<aside>
+			<figure>
+				<img src="images/espresso.jpg">
+			</figure>
+		</aside>
+		<form action="umfrage.php" method="post">
+			<fieldset>
+				<legend>Persönliche Informationen</legend>
+				Name<br>
+				<input type="text" name="Name" required size="40"><br>
+				E - Mail<br>
+				<input type="email" name="E-Mail" required placeholder="Geben sie eine E-Mail ein!" size="40"><br>
+			</fieldset>
+			<fieldset>
+				<legend>Präferenzen</legend>
+				Erzählen sie uns von Ihren Methoden zur Kaffeezubereitung!<br>
+				<textarea name="Zubereitung" cols="40" rows="6"></textarea><br><br>
+
+				Mahlen sie Ihre Kaffeebohnen selbst?<br>
+				<input type="radio" name="Mahlen" value="Ja">Ja<br>
+				<input type="radio" name="Mahlen" value="Nein">Nein<br><br>
+				
+				Wie trinken sie Ihren Kaffee?<br>
+				<input type="checkbox" name="Zucker-Milch" value="Zucker">Mit Zucker<br>
+				<input type="checkbox" name="Zucker-Milch" value="Milch">Mit Milch<br><br>
+			
+				Welche Variante gefällt Ihnen am meisten?<br>
+				<select name="Wahl">
+					<option value="">Bitte wählen sie :</option>
+					<option value="Tropfkaffee">Tropfkaffee</option>
+					<option value="French-Press">French Press</option>
+					<option value="Espresso">Espresso</option>
+					<option value="Latte">Latte</option>
+					<option value="Flavored">Flavored</option>
+				</select>
+			</fieldset>
+		</form>
+		<footer>
+			<nav>
+				<ul>
+					<li><a href="hauptseite.html">Hauptseite</a></li>
+					<li><a href="roesten.html">Rösten</a></li>
+					<li><a href="mahlen.html">Mahlen</a></li>
+					<li><a href="bruehen.html">Brühen</a></li>
+					<li><a href="kaffeevarianten.html">Kaffeevarianten</a></li>
+					<li><a href="umfrage.html">Umfrage</a></li>
+				</ul>
+			</nav>
+		</footer>
+	</body>
+</html>
